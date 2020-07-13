@@ -11,10 +11,21 @@ void draw() {
 // First run the program and you should see a flower.  
   
   
-/* Then, use a loop to make a body for the Bee! 
+/* Then, use a loop to make a body for the Bee!
 (see the image on the recipe, it's a diagonal line of circles)
 Use modulo to make the colors alternate between yellow and black
 */
+int ellipsexy = 0;
+for(int i = 2; i < 25; i++){
+  fill(255,0,0);
+  ellipse(ellipsexy,ellipsexy,50,50);
+  ellipsexy = ellipsexy + 20;
+  
+  if(i%2 == 0){
+    fill(0,0,0);
+  }
+  else{
+    fill(225,225,0);
 
 
 
