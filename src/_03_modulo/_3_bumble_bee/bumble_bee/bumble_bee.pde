@@ -16,22 +16,23 @@ void draw() {
 Use modulo to make the colors alternate between yellow and black
 */
 int ellipsexy = 0;
-for(int i = 2; i < 25; i++){
-  fill(255,0,0);
+for(int i = 2; i < 48; i++){
   ellipse(ellipsexy,ellipsexy,50,50);
-  ellipsexy = ellipsexy + 20;
+  ellipsexy = ellipsexy + 10;
   
   if(i%2 == 0){
-    fill(0,0,0);
+    fill(225,225,0);
   }
   else{
-    fill(225,225,0);
-
+    fill(0,0,0);
+  }
+}
 
 
 /*
 Now put his head on using drawBeeFace(x,y)
 */
+drawBeeFace(ellipsexy,ellipsexy);
 
 }
 
